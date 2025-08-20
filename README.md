@@ -4,6 +4,23 @@
 -- made scafold using vite 
 -- removed all unwanted files 
 -- configured tailwindcss
+-- header
+-- routing of app
+-- login form
+-- signup form
+-- form validation
+-- useref hook
+-- firebase setup
+-- deployed to firebase
+-- create signup user account
+-- implement sign in user api
+-- created redux store with userslice
+-- implemented signout
+-- fetch movies from tmdb movies
+-- Registered on TMDB
+-- made a api call to now playing movies
+-- made background using video
+-- made custom hook
 
 
 # features

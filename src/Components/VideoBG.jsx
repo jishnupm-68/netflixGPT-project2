@@ -1,0 +1,23 @@
+
+import {useSelector} from "react-redux"
+import useMovieTrailer from '../hooks/useMovieTrailer'
+const VideoBG = (movieId) => {
+    useMovieTrailer()
+    const trailerId = useSelector(store=>store.movies.trailerId)
+    if(!trailerId?.key) return
+  return (
+    <div className=" absolute z-40  w-[100%]">
+      <iframe 
+      className="aspect-video "
+       src={"https://www.youtube.com/embed/"+trailerId?.key+"?&autoplay=1&mute=1"} 
+       title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+        loading="lazy"></iframe>
+    </div>
+  )
+}
+
+export default VideoBG
